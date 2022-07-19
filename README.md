@@ -33,7 +33,7 @@ Video link: https://www.youtube.com/watch?v=iSNsgj1OCLA
 
 ### Help
 
-```shell
+```
 usage: main.py [-h] [-v] [-r] [-s] [-m] [-e] [--show-log]
 
 100 prisoner problem probablity calculator. This project is inspired from @veritasium video
