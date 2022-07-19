@@ -15,7 +15,7 @@ parser.add_argument("-v", "--version", action="version", version=f"v{__version__
 parser.add_argument("-r", "--random-prisoner", dest="randp", default=False, action="store_true", help="randomize prisoner array before box opening")
 parser.add_argument("-s", "--stop-early", dest="stop", default=True, action="store_false", help="stop on first failure")
 parser.add_argument("-m", "--max-tries", default=50, dest="tries", type=int, help="maximum number of tries each prisoner gets", metavar="")
-parser.add_argument("-e", "--epochs", default=51, help="how many times run prediction task", metavar="")
+parser.add_argument("-e", "--epochs", type=int, default=51, help="how many times run prediction task", metavar="")
 parser.add_argument("--show-log", default=False, action="store_true", help="show debug logs")
 args = parser.parse_args()
 
