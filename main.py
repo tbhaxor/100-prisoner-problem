@@ -1,4 +1,4 @@
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 import logging
 from argparse import ArgumentParser, RawTextHelpFormatter, ArgumentDefaultsHelpFormatter, RawDescriptionHelpFormatter
@@ -67,7 +67,7 @@ def do_lookup():
             row, col = matrix[row, col] // 10, matrix[row, col] % 10
             p.info("going to (%d,%d)" % (row, col))
         else:
-            p.error("sorry guys I got you all killed!s")
+            p.error("sorry guys I got you all killed!")
             raise LookupError(f"Prisoner {prisoner} got every body killed!")
 
     pass
